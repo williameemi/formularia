@@ -9,5 +9,5 @@ License:
 Text Domain : Fomularia
 */
 
+require( plugin_dir_path( __FILE__ ) . 'inc/register-field-group.inc.php');
 require( plugin_dir_path( __FILE__ ) . 'inc/post-type.inc.php');
-

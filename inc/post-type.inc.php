@@ -1,5 +1,5 @@
 <?php
-function form() {
+function formularia() {
 
     $labels = array(
         'name'                => _x( 'Formularia', 'Post Type General Name', 'formularia' ),
@@ -19,8 +19,8 @@ function form() {
         'not_found_in_trash'  => __( 'Not found Formularia in Trash', 'formularia' ),
     );
     $args = array(
-        'label'               => __( 'form', 'formularia' ),
-        'description'         => __( 'form', 'formularia' ),
+        'label'               => __( 'formularia', 'formularia' ),
+        'description'         => __( 'formularia', 'formularia' ),
         'labels'              => $labels,
         'supports'            => array('title'),
         'hierarchical'        => false,
@@ -37,7 +37,7 @@ function form() {
         'publicly_queryable'  => true,
         'capability_type'     => 'post',
     );
-    register_post_type( 'form', $args );
+    register_post_type( 'formularia', $args );
 
 }
-add_action( 'init', 'form', 0 );
+add_action( 'init', 'formularia', 0 );
