@@ -11,3 +11,14 @@ Text Domain : Fomularia
 
 require( plugin_dir_path( __FILE__ ) . 'inc/register-field-group.inc.php');
 require( plugin_dir_path( __FILE__ ) . 'inc/post-type.inc.php');
+
+add_filter( 'the_content', 'formularia_show_form' );
+
+
+function formularia_show_form($content){
+
+    $form_name = get_field('form_name', get_queried_object_id());
+    $first_name = get_field('first_name', get_queried_object_id());
+
+    return $content."<h1>".$form_name."</h1><p>".$first_name."</p>";
+}
