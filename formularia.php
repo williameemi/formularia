@@ -22,8 +22,11 @@ function formularia_show_form($content){
 
     foreach($allfields as $key=>$value) {
 
-        if ($key == "first_name") {
+        if ($key == "first_name" && $value["value"] != "") {
             $content .= '<label for="first_name">' . __('Firstname', 'formularia') . ': </label><input type="text" name="first_name" id="first_name"/><br/><br/>';
+        }
+        if ($key == "name" && $value["value"] != "") {
+            $content .= '<label for="name">' . __('Name', 'formularia') . ': </label><input type="text" name="name" id="name"/><br/><br/>';
         }
 
     }
