@@ -17,8 +17,15 @@ add_filter( 'the_content', 'formularia_show_form' );
 
 function formularia_show_form($content){
 
-    $form_name = get_field('form_name', get_queried_object_id());
-    $first_name = get_field('first_name', get_queried_object_id());
+    $allfields = get_field_objects(get_queried_object_id());
+    $content = "";
 
-    return $content."<h1>".$form_name."</h1><p>".$first_name."</p>";
+    foreach($allfields as $key=>$value) {
+
+        if ($key == "first_name") {
+            $content .= '<label for="first_name">' . __('Firstname', 'formularia') . ': </label><input type="text" name="first_name" id="first_name"/><br/><br/>';
+        }
+
+    }
+    return $content;
 }
