@@ -14,8 +14,25 @@ require( plugin_dir_path( __FILE__ ) . 'inc/post-type.inc.php' );
 require( plugin_dir_path( __FILE__ ) . 'inc/show.inc.php' );
 
 add_filter( 'the_content' , 'formularia_show_form' );
+add_action('admin_menu', 'mt_add_pages');
 
 if(isset($_POST["accord-form"]) && $_POST["accord-form"] == "123457543456"){
 
     send_data();
+}
+
+function mt_add_pages() {
+
+    add_options_page(__('Formularia export CSV','menu-test'), __('Formularia Export','menu-test'), 'manage_options', 'formularia_settings', 'formularia_settings');
+}
+
+function formularia_settings() {
+    echo "<h2>" . __( 'Exporter au format CSV toutes les données' , 'formularia' ) . "</h2>";
+    echo "<a href=''>" .__( 'Exporter les données en CSV' , 'formularia' ) . "</a>";
+
+    echo "<h2>" . __( 'Choisir sa langue' , 'formularia' ) . "</h2>";
+    echo "<select>
+            <option value='fr'>Français</option>
+            <option value='en'>Anglais</option>
+          </select>";
 }

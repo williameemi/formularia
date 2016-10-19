@@ -1078,6 +1078,7 @@ function formularia_show_form( $content ){
     }
 
     $content .= '<input type="hidden" value="123457543456" name="accord-form"/><input type="submit" value="Send"></form>';
+
     return $content;
 }
 

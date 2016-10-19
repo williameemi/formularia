@@ -15,7 +15,6 @@ if(function_exists("register_field_group"))
                 'default_value' => '',
                 'layout' => 'vertical',
             ),
-
             array (
                 'key' => 'field_5616b8c83aa94',
                 'label' => __('IDENTITY', 'formularia'),
