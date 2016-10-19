@@ -26,13 +26,61 @@ function mt_add_pages() {
     add_options_page(__('Formularia export CSV','menu-test'), __('Formularia Export','menu-test'), 'manage_options', 'formularia_settings', 'formularia_settings');
 }
 
-function formularia_settings() {
-    echo "<h2>" . __( 'Exporter au format CSV toutes les données' , 'formularia' ) . "</h2>";
-    echo "<a href=''>" .__( 'Exporter les données en CSV' , 'formularia' ) . "</a>";
-
-    echo "<h2>" . __( 'Choisir sa langue' , 'formularia' ) . "</h2>";
-    echo "<select>
-            <option value='fr'>Français</option>
-            <option value='en'>Anglais</option>
-          </select>";
+function formularia_settings()
+{
+    echo "<h2>" . __('Exporter au format CSV toutes les données', 'formularia') . "</h2>";
+    echo "<a href=''>" . __('Exporter les données en CSV', 'formularia') . "</a>";
 }
+// CSV
+
+//$lignes = array();
+//
+//global $wpdb;
+//
+//// create a file pointer connected to the output stream
+//$output = fopen('php://output', 'w');
+//
+//// output the column headings
+//fputcsv($output, array('ID', 'Date', 'Content'));
+//
+//// fetch the data
+//$results = $wpdb->get_results( 'SELECT * FROM wp_workshop_1.wp_formularia ' );
+//// loop over the rows, outputting them
+//
+//foreach ($results as $result) {
+//
+//    $id = $result->id;
+//    $date = $result->datetime ;
+//    $contents = json_decode($result->content);
+//
+//
+//    foreach ($contents as $content){
+//
+//        $lignes[] = array( $id, $date, $content );
+//
+//    }
+//}
+//fputcsv($output, $lignes);
+
+global $wpdb;
+var_dump(WP_PLUGIN_DIR);
+$fp = fopen(WP_PLUGIN_DIR.'/formularia/csv/file.csv', 'w');
+$files_to_zip[] = WP_PLUGIN_DIR.'/formularia/csv/file.csv';
+
+$results = $wpdb->get_results( 'SELECT * FROM wp_workshop_1.wp_formularia ' );
+fputcsv($fp, array("ID","DATE","CONTENT"));
+foreach ($results as $result) {
+
+    $id = $result->id;
+    $date = $result->datetime ;
+    $contents = json_decode($result->content);
+
+    foreach ($contents as $content){
+
+        $lignes = array( $id, $date, $content );
+
+        fputcsv($fp, $lignes);
+
+    }
+}
+fclose($fp);
