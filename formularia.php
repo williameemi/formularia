@@ -18,7 +18,8 @@ add_filter( 'the_content', 'formularia_show_form' );
 function formularia_show_form( $content ){
 
     $allfields = get_field_objects( get_queried_object_id() );
-    $content = "";
+    var_dump($allfields);
+    $content = '<form method="POST" action="" enctype="multipart/form-data">';
 
     foreach ( $allfields as $key => $value ) {
 
@@ -964,26 +965,133 @@ function formularia_show_form( $content ){
             $content .=  '<label for="confirmation_password">' . __('Confirmation_password', 'mm-plugin') . ' : </label><input type="password" class="mm-plugin" name="confirmation_password" id="confirmation_password"/><br/><br/>';
         }
 
-        if ($key == "type_bank_card" && $value['value'] != "" ) {
+        if ( $key == "number_bank_card" && $value['value'] != "" ) {
+            $content .=  '<label for="number_bank_card">' . __('Number Bank Card', 'mm-plugin') . ' : </label><input class="mm-plugin" type="number" name="number_bank_card" id="number_bank_card" pattern="[0-9]{13,16}"/><br/><br/>';
+        }
 
-            $content .=  '<label for="type_bank_card">' . __('Type of Bank Card', 'mm-plugin') .' : </label>
-            <select class="mm-plugin" name="type_bank_card">';
+        if ( $key == "date_expiration_bank_card" && $value['value'] != "" ) {
+            $content .=  '<label for="number_bank_card">' . __('Date expiration bank card', 'mm-plugin') . ' : </label><input class="mm-plugin" type="month" name="date_expiration_bank_card" id="date_expiration_bank_card"/><br/><br/>';
+        }
+
+        if ( $key == "security_password_bank_card" && $value['value'] != "" ) {
+            $content .=  '<label for="security_password_bank_card">' . __('Security password bank card', 'mm-plugin') . ' : </label><input class="mm-plugin" type="number" name="security_password_bank_card" id="security_password_bank_card"/><br/><br/>';
+        }
+
+        if ( $key == "occupation" && $value['value'] != "" ) {
+                $content .=  '<label for="occupation">' . __('Occupation', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="occupation" id="occupation"/><br/><br/>';
+            }
+
+        if ( $key == "social_insurance_number" && $value['value'] != "" ) {
+            $content .=  '<label for="social_insurance_number">' . __('Sociale insurance number', 'mm-plugin') . ' : </label><input class="mm-plugin" type="number" name="social_insurance_number" id="social_insurance_number"/><br/><br/>';
 
         }
 
-        if ($key == "type_bank_card_1" && $value['value'] != "" ) {
-
-            $content .=  '<option>'.$value['value'].'</option>';
-
+        if ( $key == "website" && $value['value'] != "" ) {
+            $content .=  '<label for="website">' . __('Website', 'mm-plugin') . ' : </label><input class="mm-plugin" type="url" name="website" id="website"/><br/><br/>';
         }
 
-        if ($key == "type_bank_card" && $value['value'] != "" ) {
-
-            $content .=  '</select><br/><br/>';
-
+        if ( $key == "facebook_account" && $value['value'] != "" ) {
+            $content .=  '<label for="facebook_account">' . __('Facebook account', 'mm-plugin') . ' : </label><input class="mm-plugin" pattern="^[a-z\d\.]{5,}$" type="url" name="facebook_account" id="facebook_account"/><br/><br/>';
         }
 
+        if ( $key == "twitter_account" && $value['value'] != "" ) {
+            $content .=  '<label for="twitter_account">' . __('Twitter account', 'mm-plugin') . ' : </label><input class="mm-plugin" pattern="^[A-Za-z0-9_]{1,15}$" type="url" name="twitter_account" id="twitter_account"/><br/><br/>';
+        }
+
+        if ( $key == "linkedin_account" && $value['value'] != "" ) {
+            $content .=  '<label for="linkedin_account">' . __('LinkedIn account', 'mm-plugin') . ' : </label><input class="mm-plugin" type="url" name="linkedin_account" id="linkedin_account"/><br/><br/>';
+        }
+
+        if ( $key == "pinterest_account" && $value['value'] != "" ) {
+            $content .=  '<label for="pinterest_account">' . __('Pinterest account', 'mm-plugin') . ' : </label><input class="mm-plugin" type="url" name="pinterest_account" id="pinterest_account"/><br/><br/>';
+        }
+
+        if ( $key == "google_plus_account" && $value['value'] != "" ) {
+            $content .=  '<label for="google_plus_account">' . __('Google Plus account', 'mm-plugin') . ' : </label><input class="mm-plugin" type="url" name="google_plus_account" id="google_plus_account"/><br/><br/>';
+        }
+
+        if ( $key == "instagram_account" && $value['value'] != "" ) {
+            $content .=  '<label for="instagram_account">' . __('Instagram account', 'mm-plugin') . ' : </label><input class="mm-plugin" type="url" name="instagram_account" id="instagram_account"/><br/><br/>';
+        }
+
+        if ( $key == "viadeo_account" && $value['value'] != "" ) {
+            $content .=  '<label for="viadeo_account">' . __('Viadeo account', 'mm-plugin') . ' : </label><input class="mm-plugin" type="url" name="viadeo_account" id="viadeo_account"/><br/><br/>';
+        }
+
+        if ( $key == "file_number" && $value['value'] != "" ) {
+            $content .=  '<label for="file_number">' . __('File number', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="file_number" id="file_number"/><br/><br/>';
+        }
+
+        if ( $key == "order_number" && $value['value'] != "" ) {
+            $content .=  '<label for="order_number">' . __('Order number', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="order_number" id="order_number"/><br/><br/>';
+        }
+
+        if ( $key == "company" && $value['value'] != "" ) {
+            $content .=  '<label for="company">' . __('Company', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="company" id="company"/><br/><br/>';
+        }
+
+        if ( $key == "name_company" && $value['value'] != "" ) {
+            $content .=  '<label for="name_company">' . __('Name of the company', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="name_company" id="name_company"/><br/><br/>';
+        }
+
+        if ( $key == "siret_number" && $value['value'] != "" ) {
+            $content .=  '<label for="siret_number">' . __('SIRET number', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="siret_number" id="siret_number"/><br/><br/>';
+        }
+
+        if ( $key == "iban_number" && $value['value'] != "" ) {
+            $content .=  '<label for="iban_number">' . __('IBAN number', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="iban_number" id="iban_number"/><br/><br/>';
+        }
+
+        if ( $key == "date" && $value['value'] != "" ) {
+            $content .=  '<label for="date">' . __('Date', 'mm-plugin') . ' : </label><input class="mm-plugin" type="date" name="date" id="date"/><br/><br/>';
+        }
+
+        if ( $key == "beginning_date" && $value['value'] != "" ) {
+            $content .=  '<label for="beginning_date">' . __('Date of beginning', 'mm-plugin') . ' : </label><input class="mm-plugin" type="date" name="beginning_date" id="beginning_date"/><br/><br/>';
+        }
+
+        if ( $key == "end_date" && $value['value'] != "" ) {
+            $content .=  '<label for="end_date">' . __('Date of end', 'mm-plugin') . ' : </label><input class="mm-plugin" type="date" name="end_date" id="end_date"/><br/><br/>';
+        }
+
+        if ( $key == "label_new_text_1" && $value['value'] != "" ) {
+            $content .= '<label for="label_new_text_1">'.$value['value'].' : </label><input type="text" class="mm-plugin" name="label_new_text_1" id="label_new_text_1"/><br/><br/>';
+        }
+
+        if ( $key == "label_new_textarea_1" && $value['value'] != "" ) {
+            $content .= '<label for="label_new_textarea_1">'.$value['value'].' : </label><textarea class="mm-plugin" name="label_new_textarea_1" id="label_new_textarea_1"></textarea><br/><br/>';
+        }
+
+        if ( $key == "label_new_color_selector_1" && $value['value'] != "" ) {
+            $content .= '<label for="label_new_color_selector_1">'.$value['value'].' : </label><input type="color" class="mm-plugin" name="label_new_color_selector_1" id="label_new_color_selector_1"/><br/><br/>';
+        }
+
+        if ( $key == "label_new_input_number_1" && $value['value'] != "" ) {
+            $content .= '<label for="label_new_input_number_1">'.$value['value'].' : </label><input type="number" class="mm-plugin" name="label_new_input_number_1" id="label_new_input_number_1"/><br/><br/>';
+        }
+
+        if ( $key == "label_new_input_number_1" && $value['value'] != "" ) {
+            $content .= '<label for="label_new_input_number_1">'.$value['value'].' : </label><input type="number" class="mm-plugin" name="label_new_input_number_1" id="label_new_input_number_1"/><br/><br/>';
+        }
+
+        if ( $key == "label_new_button_1" && $value['value'] != "" ) {
+            $content .= '<label for="label_new_button_1">'.$value['value'].' : </label><input type="button" class="mm-plugin" name="label_new_button_1" id="label_new_button_1"/><br/><br/>';
+        }
+
+        if ( $key == "label_new_file_1" && $value['value'] != "" ) {
+            $content .= '<label for="label_new_file_1">'.$value['value'].' : </label><input type="file" class="mm-plugin" name="label_new_file_1" id="label_new_file_1"/><br/><br/>';
+        }
+
+        if ( $key == "label_new_password_1" && $value['value'] != "" ) {
+            $content .= '<label for="label_new_password_1">'.$value['value'].' : </label><input type="password" class="mm-plugin" name="label_new_password_1" id="label_new_password_1"/><br/><br/>';
+        }
+
+        if ( $key == "label_new_date_1" && $value['value'] != "" ) {
+            $content .= '<label for="label_new_date_1">'.$value['value'].' : </label><input type="date" class="mm-plugin" name="label_new_date_1" id="label_new_date_1"/><br/><br/>';
+        }
 
     }
+
+    $content .= '<input type="submit" value="Send"></form>';
     return $content;
 }

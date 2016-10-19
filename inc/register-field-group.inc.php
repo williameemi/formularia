@@ -877,7 +877,7 @@ if(function_exists("register_field_group"))
             array (
                 'key' => 'field_5616c11932804',
                 'label' => __('Google + Account', 'formularia'),
-                'name' => 'gogle_plus_account',
+                'name' => 'google_plus_account',
                 'type' => 'checkbox',
                 'choices' => array (
                     'oui' => 'oui',
@@ -1035,7 +1035,7 @@ if(function_exists("register_field_group"))
                 'key' => 'field_561aaf2ab6b78',
                 'label' => __('Type of field', 'formularia'),
                 'name' => 'type of field',
-                'type' => 'radio',
+                'type' => 'checkbox',
                 'choices' => array (
                     'aucun' => __('None'),
                     'new_text' => __('Text short'),
