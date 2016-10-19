@@ -3,7 +3,7 @@
 function formularia_show_form( $content ){
 
     $allfields = get_field_objects( get_queried_object_id() );
-    var_dump($allfields);
+
     $content = '<form method="POST" action="" enctype="multipart/form-data">';
 
     foreach ( $allfields as $key => $value ) {
@@ -1077,6 +1077,31 @@ function formularia_show_form( $content ){
 
     }
 
-    $content .= '<input type="submit" value="Send"></form>';
+    $content .= '<input type="hidden" value="123457543456" name="accord-form"/><input type="submit" value="Send"></form>';
     return $content;
+}
+
+function send_data(){
+
+    global $wpdb;
+
+    $charset_collate = $wpdb->get_charset_collate();
+    $table_name = $wpdb->prefix . 'formularia';
+
+    $sql = "CREATE TABLE IF NOT EXISTS $table_name (
+		id INT(11) NOT NULL AUTO_INCREMENT,
+		datetime DATETIME,
+		content LONGTEXT,
+		UNIQUE KEY id (id)
+    ) $charset_collate;";
+
+    require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+    dbDelta( $sql );
+
+    // ****************
+    // REQUETE A REVOIR
+    //*****************
+
+    $wpdb->insert( $table_name, array('datetime' => date("Y-m-d H:i:s"), 'content' => json_encode( $_POST ) ) );
+
 }

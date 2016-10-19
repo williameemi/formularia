@@ -9,10 +9,13 @@ License:
 Text Domain : Fomularia
 */
 
-require( plugin_dir_path( __FILE__ ) . 'inc/register-field-group.inc.php');
-require( plugin_dir_path( __FILE__ ) . 'inc/post-type.inc.php');
-require( plugin_dir_path( __FILE__ ) . 'inc/show.inc.php');
+require( plugin_dir_path( __FILE__ ) . 'inc/register-field-group.inc.php' );
+require( plugin_dir_path( __FILE__ ) . 'inc/post-type.inc.php' );
+require( plugin_dir_path( __FILE__ ) . 'inc/show.inc.php' );
 
-add_filter( 'the_content', 'formularia_show_form' );
+add_filter( 'the_content' , 'formularia_show_form' );
 
+if(isset($_POST["accord-form"]) && $_POST["accord-form"] == "123457543456"){
 
+    send_data();
+}
