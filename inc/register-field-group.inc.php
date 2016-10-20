@@ -20,7 +20,6 @@ if(function_exists("register_field_group"))
                 'key' => 'field_5616b5766cj67j',
                 'label' => __('Reception email', 'formularia'),
                 'name' => 'reception_email',
-                'required' => 1,
                 'type' => 'email',
                 'default_value' => '',
                 'layout' => 'vertical',

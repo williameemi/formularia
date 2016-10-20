@@ -17,7 +17,7 @@ if(isset($_POST["export-file-csv"])){
     global $wpdb;
     $fp = fopen(WP_PLUGIN_DIR.'/formularia/csv/formularia-export-csv.csv', 'w');
     $filename = WP_PLUGIN_DIR.'/formularia/csv/formularia-export-csv.csv';
-    $results = $wpdb->get_results( 'SELECT * FROM wp_workshop_1.wp_formularia ' );
+    $results = $wpdb->get_results( 'SELECT * FROM wp_formularia ' );
     fputcsv($fp, array("ID","DATE","CONTENT"));
     foreach ($results as $result) {
 

@@ -4,36 +4,22 @@ if(isset($_POST["accord-form"]) && $_POST["accord-form"] == "123457543456"){
 
     send_data();
 
-    $to = $_POST["reception_email"];
-    $message = json_encode($_POST);
-    $subject = $_POST["form-name"];
-    $headers = array('Content-Type: text/html; charset=UTF-8');
+    if ( isset( $_POST["reception_email"] ) ) {
 
-    $mail = new PHPMailer;
+        $to = $_POST["reception_email"];
+        $message = "";
+        $subject = "Réponse au formulaire" . $_POST["form_name"];
 
-    $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'dev.etudiant-eemi.com';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'wmerlemarty';                 // SMTP username
-    $mail->Password = '843138';                           // SMTP password
-    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;                                    // TCP port to connect to
+        foreach ( $_POST as $key => $value ) {
 
-    $mail->setFrom($_POST["reception_email"], 'FORMULARIA WP');
-    $mail->addAddress($_POST["reception_email"], 'FORMULARIA WP');     // Add a recipient
+            if ($key != "accord-form" && $key != "reception_email" ) {
 
-    $mail->isHTML(true);                                  // Set email format to HTML
+                $message .= $key . " : " . $value . "
 
-    $mail->Subject = 'FORMULARIA WP';
-    $mail->Body    = json_encode($_POST);
-    $mail->AltBody = json_encode($_POST);
-
-    if(!$mail->send()) {
-        echo 'Message could not be sent.';
-        echo 'Mailer Error: ' . $mail->ErrorInfo;
-        die();
-    } else {
-        echo 'Message has been sent';
+                ";
+            }
+        }
+        mail($to,$subject,$message);
     }
 }
 
