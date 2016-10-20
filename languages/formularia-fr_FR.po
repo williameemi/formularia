@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: formularia - version 1.0 PluginReport-Msgid-Bugs-To: https://github.com/williameemi/formularia\n"
 "POT-Creation-Date: 2015-08-11 11:36-0500\n"
-"PO-Revision-Date: 2015-12-13 13:06+0100\n"
+"PO-Revision-Date: 2016-10-20 23:42+0200\n"
 "Last-Translator: William MERLE-MARTY <william.merlemarty@gmail.com>\n"
 "Language-Team: William MERLE-MARTY <william.merlemarty@gmail.com>\n"
 "Language: fr_FR\n"
@@ -19,7 +19,8 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: tests\n"
 "X-Poedit-SearchPathExcluded-1: *.js\n"
 
-#: post-type.inc.php, register-field-group.inc.php, send-form.inc.php, setting-export.inc.php, show.inc.php
+#: post-type.inc.php, ../register-field-group.inc.php, send-form.inc.php,
+#: setting-export.inc.php, show.inc.php
 msgid "Form Name"
 msgstr "Nom du formulaire"
 

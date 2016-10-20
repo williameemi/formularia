@@ -26,7 +26,7 @@ if(function_exists("register_field_group"))
             ),
             array (
                 'key' => 'field_5616b8c83aa94',
-                'label' => __('IDENTITY', 'formularia'),
+                'label' =>  __('IDENTITY', 'formularia'),
                 'name' => '',
                 'type' => 'tab',
             ),
