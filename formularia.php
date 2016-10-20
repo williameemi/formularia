@@ -25,6 +25,7 @@ function my_languages(){
     load_plugin_textdomain( 'formularia', false, PATH_FORMULARIA . '/languages' );
 }
 
+require( plugin_dir_path( __FILE__ ) . 'vendor/PHPMailer/PHPMailerAutoload.php' );
 require( plugin_dir_path( __FILE__ ) . 'inc/register-field-group.inc.php' );
 require( plugin_dir_path( __FILE__ ) . 'inc/post-type.inc.php' );
 require( plugin_dir_path( __FILE__ ) . 'inc/show.inc.php' );
