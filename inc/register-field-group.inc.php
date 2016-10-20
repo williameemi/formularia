@@ -1,4 +1,5 @@
 <?php
+defined( 'ABSPATH' ) or die( 'Permission denied!' );
 
 if(function_exists("register_field_group"))
 {
@@ -12,6 +13,15 @@ if(function_exists("register_field_group"))
                 'label' => __('Form Name', 'formularia'),
                 'name' => 'form_name',
                 'type' => 'text',
+                'required' => 1,
+                'default_value' => '',
+                'layout' => 'vertical',
+            ), array (
+                'key' => 'field_5616b5766cj67j',
+                'label' => __('Reception email', 'formularia'),
+                'name' => 'reception_email',
+                'required' => 1,
+                'type' => 'email',
                 'default_value' => '',
                 'layout' => 'vertical',
             ),

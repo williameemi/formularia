@@ -1,4 +1,25 @@
 <?php
+defined( 'ABSPATH' ) or die( 'Permission denied!' );
+
+function formularia_change_title( $title )
+{
+
+    $allfields = get_field_objects(get_queried_object_id());
+
+    $title = '';
+
+    foreach ($allfields as $key => $value) {
+
+
+        if ($key == "form_name" && $value['value'] != "") {
+
+            $title .= $value["value"];
+
+        }
+    }
+
+    return $title;
+}
 
 function formularia_show_form( $content ){
 
@@ -7,6 +28,10 @@ function formularia_show_form( $content ){
     $content = '<form method="POST" action="" enctype="multipart/form-data">';
 
     foreach ( $allfields as $key => $value ) {
+
+        if ( $key == "reception_email" && $value['value'] != "" ) {
+            $content .= '<input type="hidden" value="' . $value['value'] . '" name="reception_email">';
+        }
 
         if ( $key == "first_name" && $value['value'] != "" ) {
             $content .= '<label for="first_name">' . __('Firstname', 'formularia') . ': </label><input type="text" name="first_name" id="first_name"/><br/><br/>';
@@ -1082,27 +1107,3 @@ function formularia_show_form( $content ){
     return $content;
 }
 
-function send_data(){
-
-    global $wpdb;
-
-    $charset_collate = $wpdb->get_charset_collate();
-    $table_name = $wpdb->prefix . 'formularia';
-
-    $sql = "CREATE TABLE IF NOT EXISTS $table_name (
-		id INT(11) NOT NULL AUTO_INCREMENT,
-		datetime DATETIME,
-		content LONGTEXT,
-		UNIQUE KEY id (id)
-    ) $charset_collate;";
-
-    require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
-    dbDelta( $sql );
-
-    // ****************
-    // REQUETE A REVOIR
-    //*****************
-
-    $wpdb->insert( $table_name, array('datetime' => date("Y-m-d H:i:s"), 'content' => json_encode( $_POST ) ) );
-
-}

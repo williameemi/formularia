@@ -1,4 +1,6 @@
 <?php
+defined( 'ABSPATH' ) or die( 'Permission denied!' );
+
 function formularia() {
 
     $labels = array(

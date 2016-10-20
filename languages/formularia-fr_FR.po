@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Merle-Marty PluginReport-Msgid-Bugs-To: https://github.com/williameemi/merle_marty_plugin_wpui\n"
+"Project-Id-Version: formularia - version 1.0 PluginReport-Msgid-Bugs-To: https://github.com/williameemi/formularia\n"
 "POT-Creation-Date: 2015-08-11 11:36-0500\n"
-"PO-Revision-Date: 2016-10-20 11:16+0200\n"
-"Last-Translator: William Merle-Marty <william.merle-marty@eemi.com>\n"
-"Language-Team: William Merle-Marty <william.merle-marty@eemi.com>\n"
+"PO-Revision-Date: 2015-12-13 13:06+0100\n"
+"Last-Translator: William MERLE-MARTY <william.merlemarty@gmail.com>\n"
+"Language-Team: William MERLE-MARTY <william.merlemarty@gmail.com>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: tests\n"
 "X-Poedit-SearchPathExcluded-1: *.js\n"
 
-#: register-field-group.inc.php, show.inc.php, post-type.inc.php
+#: post-type.inc.php, register-field-group.inc.php, send-form.inc.php, setting-export.inc.php, show.inc.php
 msgid "Form Name"
 msgstr "Nom du formulaire"
 
@@ -371,29 +371,29 @@ msgstr "ACTION DU FORMULAIRE"
 msgid "File's name of \"action\" of the form"
 msgstr "Nom du fichier d'action"
 
-msgid "All Formulaire"
-msgstr "Tous les formulaires"
+msgid "All Formularias"
+msgstr "Tous les Formularias"
 
-msgid "Add New Formulaire"
-msgstr "Ajouter un formulaire"
+msgid "Add New Formularia"
+msgstr "Ajouter un Formularia"
 
-msgid "New Formulaire"
-msgstr "Nouveau un formulaire"
+msgid "New Formularia"
+msgstr "Nouveau Formularia"
 
-msgid "Edit Formulaire"
-msgstr "Modifier un formulaire"
+msgid "Edit Formularia"
+msgstr "Modifier un Formularia"
 
-msgid "Update Formulaire"
-msgstr "Mettre à jour un formulaire"
+msgid "Update Formularia"
+msgstr "Mettre à jour un Formularia"
 
-msgid "View Formulaire"
-msgstr "Voire un formulaire"
+msgid "View Formularia"
+msgstr "Voire un Formularia"
 
-msgid "Search Formulaire"
-msgstr "Rechercher un formulaire"
+msgid "Search Formularia"
+msgstr "Rechercher un Formularia"
 
-msgid "Not found Formulaire"
-msgstr "Formulaire non trouvé"
+msgid "Not found Formularia"
+msgstr "Formularia non trouvé"
 
-msgid "Not found Formulaire in Trash"
-msgstr "Formulaire non trouvé dans la corbeille"
+msgid "Not found Formularia in Trash"
+msgstr "Formularia non trouvé dans la corbeille"
