@@ -960,7 +960,7 @@ function formularia_show_form( $content ){
         }
 
         if ( $key == "host_identifier" && $value['value'] != "" ) {
-            $content .=  '<label for="host_identifier">' . __('Host_identifier', 'formularia') . ' : </label><input type="text" class="formularia" name="host_identifier" id="host_identifier"/><br/><br/>';
+            $content .=  '<label for="host_identifier">' . __('Host identifier', 'formularia') . ' : </label><input type="text" class="formularia" name="host_identifier" id="host_identifier"/><br/><br/>';
         }
 
         if ( $key == "pseudo" && $value['value'] != "" ) {
@@ -972,7 +972,7 @@ function formularia_show_form( $content ){
         }
 
         if ( $key == "confirmation_password" && $value['value'] != "" ) {
-            $content .=  '<label for="confirmation_password">' . __('Confirmation_password', 'formularia') . ' : </label><input type="password" class="formularia" name="confirmation_password" id="confirmation_password"/><br/><br/>';
+            $content .=  '<label for="confirmation_password">' . __('Confirmation of password', 'formularia') . ' : </label><input type="password" class="formularia" name="confirmation_password" id="confirmation_password"/><br/><br/>';
         }
 
         if ( $key == "number_bank_card" && $value['value'] != "" ) {
