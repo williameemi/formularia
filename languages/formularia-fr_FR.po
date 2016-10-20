@@ -1,0 +1,399 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Merle-Marty PluginReport-Msgid-Bugs-To: https://github.com/williameemi/merle_marty_plugin_wpui\n"
+"POT-Creation-Date: 2015-08-11 11:36-0500\n"
+"PO-Revision-Date: 2016-10-20 11:16+0200\n"
+"Last-Translator: William Merle-Marty <william.merle-marty@eemi.com>\n"
+"Language-Team: William Merle-Marty <william.merle-marty@eemi.com>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: custom-post-type-ui.php\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: tests\n"
+"X-Poedit-SearchPathExcluded-1: *.js\n"
+
+#: register-field-group.inc.php, show.inc.php, post-type.inc.php
+msgid "Form Name"
+msgstr "Nom du formulaire"
+
+msgid "IDENTITY"
+msgstr "IDENTITÉ"
+
+msgid "Firstname"
+msgstr "Prénom"
+
+msgid "Name"
+msgstr "Nom"
+
+msgid "Civility"
+msgstr "Civilité"
+
+msgid "Birthday"
+msgstr "Date de Naissance"
+
+msgid "City of birth"
+msgstr "Ville de naissance"
+
+msgid "Department of birth"
+msgstr "Département de naissance"
+
+msgid "Country of birth"
+msgstr "Pays de naissance"
+
+msgid "Nationality"
+msgstr "Nationalité"
+
+msgid "Name of birth"
+msgstr "Nom de naissance"
+
+msgid "Maiden name"
+msgstr "Nom de jeune fille"
+
+msgid "Confirmation Mail"
+msgstr "Confirmation du mail"
+
+msgid "Subject of the mail"
+msgstr "Objet du message"
+
+msgid "Text"
+msgstr "Texte"
+
+msgid "Comment"
+msgstr "Commentaire"
+
+msgid "Mobile phone number"
+msgstr "Numéro de téléphone mobile"
+
+msgid "House phone number"
+msgstr "Numéro de téléphone domicile"
+
+msgid "Office phone number"
+msgstr "Numéro de téléphone bureau"
+
+msgid "ADRESS"
+msgstr "ADRESSE"
+
+msgid "Adress"
+msgstr "Adresse"
+
+msgid "Zip code"
+msgstr "Code Postal"
+
+msgid "City"
+msgstr "Ville"
+
+msgid "Country"
+msgstr "Pays"
+
+msgid "Name of the street"
+msgstr "Nom de la rue"
+
+msgid "Number of the street"
+msgstr "Numéro de la rue"
+
+msgid "Type of street"
+msgstr "Type de rue"
+
+msgid "Department"
+msgstr "Département"
+
+msgid "Region"
+msgstr "Région"
+
+msgid "Host identifier"
+msgstr "Nom d'utilisateur"
+
+msgid "Password"
+msgstr "Mot de passe"
+
+msgid "Confirmation of password"
+msgstr "Confirmation du mot de passe"
+
+msgid "Secret Question"
+msgstr "Question secrète"
+
+msgid "Secret question 1"
+msgstr "Question secrète 1"
+
+msgid "Secret question 2"
+msgstr "Question secrète 2"
+
+msgid "Secret question 3"
+msgstr "Question secrète 3"
+
+msgid "Secret question 4"
+msgstr "Question secrète 4"
+
+msgid "Secret question 5"
+msgstr "Question secrète 5"
+
+msgid "Secret question 6"
+msgstr "Question secrète 6"
+
+msgid "Secret question 7"
+msgstr "Question secrète 7"
+
+msgid "Secret question 8"
+msgstr "Question secrète 8"
+
+msgid "Secret question 9"
+msgstr "Question secrète 9"
+
+msgid "Secret question 10"
+msgstr "Question secrète 10"
+
+msgid "Answer secret question"
+msgstr "Réponse question secrète"
+
+msgid "BANK CARD"
+msgstr "CARTE BANCAIRE"
+
+msgid "Type of Bank Card"
+msgstr "Type de carte bancaire"
+
+msgid "Type of Bank Card 1"
+msgstr "Type de carte bancaire 1"
+
+msgid "Type of Bank Card 2"
+msgstr "Type de carte bancaire 2"
+
+msgid "Type of Bank Card 3"
+msgstr "Type de carte bancaire 3"
+
+msgid "Type of Bank Card 4"
+msgstr "Type de carte bancaire 4"
+
+msgid "Type of Bank Card 5"
+msgstr "Type de carte bancaire 5"
+
+msgid "Type of Bank Card 6"
+msgstr "Type de carte bancaire 6"
+
+msgid "Type of Bank Card 7"
+msgstr "Type de carte bancaire 7"
+
+msgid "Type of Bank Card 8"
+msgstr "Type de carte bancaire 8"
+
+msgid "Type of Bank Card 9"
+msgstr "Type de carte bancaire 9"
+
+msgid "Type of Bank Card 10"
+msgstr "Type de carte bancaire 10"
+
+msgid "Number of Bank Card"
+msgstr "Numéro de la carte bancaire"
+
+msgid "Date expiration Bank Card"
+msgstr "Date d'expiration de la carte bancaire"
+
+msgid "Security password of Bank Card"
+msgstr "Cryptogramme de sécurité"
+
+msgid "Name user of Bank Card"
+msgstr "Nom du possesseur de la carte bancaire"
+
+msgid "OTHERS"
+msgstr "AUTRES"
+
+msgid "Occupation"
+msgstr "Métier"
+
+msgid "Social Insurance number"
+msgstr "Numéro de sécurité social"
+
+msgid "WEBSITE"
+msgstr "WEB"
+
+msgid "Website"
+msgstr "Site web"
+
+msgid "Facebook Account"
+msgstr "Compte Facebook"
+
+msgid "Twitter Account"
+msgstr "Compte Twitter"
+
+msgid "LinkedIn Account"
+msgstr "Compte LinkedIn"
+
+msgid "Pinterest Account"
+msgstr "Compte Pinterest"
+
+msgid "Google + Account"
+msgstr "Compte Google +"
+
+msgid "Instagram Account"
+msgstr "Compte Instagram"
+
+msgid "Viadeo Account"
+msgstr "Compte Viadeo"
+
+msgid "File number"
+msgstr "Numéro de dossier"
+
+msgid "Order number"
+msgstr "Numéro de commande"
+
+msgid "COMPANY"
+msgstr "ENTREPRISE"
+
+msgid "Company"
+msgstr "Entreprise"
+
+msgid "Name of the company"
+msgstr "Nom de l'entreprise"
+
+msgid "SIRET number"
+msgstr "Numéro SIRET"
+
+msgid "IBAN number"
+msgstr "Numéro IBAN"
+
+msgid "Date of beginning"
+msgstr "Date de début"
+
+msgid "Date of end"
+msgstr "Date de fin"
+
+msgid "ADD A FIELD"
+msgstr "AJOUTER UN CHAMP"
+
+msgid "Type of field"
+msgstr "Type de champ"
+
+msgid "None"
+msgstr "Aucun"
+
+msgid "Text - short"
+msgstr "Texte - court"
+
+msgid "Textarea (long)"
+msgstr "Texte (long)"
+
+msgid "Select Options"
+msgstr "Menu déroulant"
+
+msgid "Radio (1 choise)"
+msgstr "Bouton radio (1 choix)"
+
+msgid "Checkbox"
+msgstr "Choix multiples"
+
+msgid "Color Selector"
+msgstr "Selecteur couleurs"
+
+msgid "Numbers"
+msgstr "Champs numérique"
+
+msgid "Button"
+msgstr "Boutton"
+
+msgid "File"
+msgstr "Téléchargement de fichiers"
+
+msgid "Date"
+msgstr "Champ Date"
+
+msgid "Label new Text"
+msgstr "Nom du nouveau texte"
+
+msgid "Label new Textarea"
+msgstr "Nom du nouveau champ texte"
+
+msgid "Label new Select Option"
+msgstr "Nom du nouveau champ menu déroulant"
+
+msgid "Label Field 1 Select Option"
+msgstr "Nom de la nouvelle option 1"
+
+msgid "Label Field 2 Select Option"
+msgstr "Nom de la nouvelle option 2"
+
+msgid "Label Field 3 Select Option"
+msgstr "Nom de la nouvelle option 3"
+
+msgid "Label Field 4 Select Option"
+msgstr "Nom de la nouvelle option 4"
+
+msgid "Label Field 5 Select Option"
+msgstr "Nom de la nouvelle option 5"
+
+msgid "Label Field 6 Select Option"
+msgstr "Nom de la nouvelle option 6"
+
+msgid "Label Field 7 Select Option"
+msgstr "Nom de la nouvelle option 7"
+
+msgid "Label Field 8 Select Option"
+msgstr "Nom de la nouvelle option 8"
+
+msgid "Label Field 9 Select Option"
+msgstr "Nom de la nouvelle option 9"
+
+msgid "Label Field 10 Select Option"
+msgstr "Nom de la nouvelle option 10"
+
+msgid "Label New Date"
+msgstr "Nom du nouveau champ date"
+
+msgid "STYLE OF FIELDS"
+msgstr "STYLE DES CHAMPS"
+
+msgid "Type of Field"
+msgstr "Forme des champs"
+
+msgid "Type of Borders"
+msgstr "Type des bordures"
+
+msgid "Background Color Field"
+msgstr "Couleur de fond des champs"
+
+msgid "Shadow"
+msgstr "Ombre"
+
+msgid "Background Submit"
+msgstr "Couleur de fond du boutton envoyer"
+
+msgid "Couleur du text dans les Fields"
+msgstr "Couleur du texte dans les champs"
+
+msgid "FORM ACTION"
+msgstr "ACTION DU FORMULAIRE"
+
+msgid "File's name of \"action\" of the form"
+msgstr "Nom du fichier d'action"
+
+msgid "All Formulaire"
+msgstr "Tous les formulaires"
+
+msgid "Add New Formulaire"
+msgstr "Ajouter un formulaire"
+
+msgid "New Formulaire"
+msgstr "Nouveau un formulaire"
+
+msgid "Edit Formulaire"
+msgstr "Modifier un formulaire"
+
+msgid "Update Formulaire"
+msgstr "Mettre à jour un formulaire"
+
+msgid "View Formulaire"
+msgstr "Voire un formulaire"
+
+msgid "Search Formulaire"
+msgstr "Rechercher un formulaire"
+
+msgid "Not found Formulaire"
+msgstr "Formulaire non trouvé"
+
+msgid "Not found Formulaire in Trash"
+msgstr "Formulaire non trouvé dans la corbeille"

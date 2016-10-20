@@ -17,26 +17,26 @@ function formularia_show_form( $content ){
         }
 
         if ( $key == "civility" && $value['value'] != "" ) {
-            $content .=  __('Civility', 'mm-plugin') . ' :
-                            <label for="sir"> ' . __('Mrs', 'mm-plugin') . '</label> <input type="radio" value="sir" id="sir" name="civility"/>
-                            <label for="madam">' . __('Ms', 'mm-plugin') . '</label> <input type="radio" value="madam" id="madam" name="civility"/>
+            $content .=  __('Civility', 'formularia') . ' :
+                            <label for="sir"> ' . __('Mrs', 'formularia') . '</label> <input type="radio" value="sir" id="sir" name="civility"/>
+                            <label for="madam">' . __('Ms', 'formularia') . '</label> <input type="radio" value="madam" id="madam" name="civility"/>
                             <br/><br/>';
         }
 
         if ( $key == "birthday" && $value['value'] != "" ) {
-            $content .=  '<label for="birthday">' . __('Birthday', 'mm-plugin') . ' </label> : <input class="mm-plugin" type="date" name="birthday" id="birthday"/><br/><br/>';
+            $content .=  '<label for="birthday">' . __('Birthday', 'formularia') . ' </label> : <input class="formularia" type="date" name="birthday" id="birthday"/><br/><br/>';
 
         }
 
         if ( $key == "city_of_birth" && $value['value'] != "" ) {
-            $content .=  '<label for="city_of_birth">' . __('City of birth', 'mm-plugin') . ' : </label> <input class="mm-plugin" type="text" name="city_of_birth" id="city_of_birth"/><br/><br/>';
+            $content .=  '<label for="city_of_birth">' . __('City of birth', 'formularia') . ' : </label> <input class="formularia" type="text" name="city_of_birth" id="city_of_birth"/><br/><br/>';
 
         }
 
         if ( $key == "department_of_birth" && $value['value'] != "" ) {
-            $content .=  '<label for="department_of_birth">' . __('Department of birth', 'mm-plugin') . ' </label> :
+            $content .=  '<label for="department_of_birth">' . __('Department of birth', 'formularia') . ' </label> :
 
-	<select class="mm-plugin" name="department_of_birth">
+	<select class="formularia" name="department_of_birth">
 
 		<option value="01">01 - Ain</option>
 
@@ -243,8 +243,8 @@ function formularia_show_form( $content ){
         }
 
         if ( $key == "country_of_birth" && $value['value'] != "" ) {
-            $content .=  '<label for="country_of_birth">' . __('Country of birth', 'mm-plugin') . ' </label> :
-                            <select class="mm-plugin" name="country_of_birth">
+            $content .=  '<label for="country_of_birth">' . __('Country of birth', 'formularia') . ' </label> :
+                            <select class="formularia" name="country_of_birth">
                                 <option value="Afganistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
                                 <option value="Algeria">Algeria</option>
@@ -497,106 +497,106 @@ function formularia_show_form( $content ){
         }
 
         if ( $key == "nationality" && $value['value'] != "" ) {
-            $content .=  '<label for="nationality">' . __('Nationality', 'mm-plugin') . ' </label> : <input class="mm-plugin" type="date" name="nationality" id="nationality"/><br/><br/>';
+            $content .=  '<label for="nationality">' . __('Nationality', 'formularia') . ' </label> : <input class="formularia" type="date" name="nationality" id="nationality"/><br/><br/>';
 
         }
 
         if ( $key == "age" && $value['value'] != "" ) {
-            $content .=  '<label for="age">' . __('Age', 'mm-plugin') . ' </label><input class="mm-plugin" type="number" name="age" value="age" id="age"><br/><br/>';
+            $content .=  '<label for="age">' . __('Age', 'formularia') . ' </label><input class="formularia" type="number" name="age" value="age" id="age"><br/><br/>';
 
         }
 
         if ( $key == "name_of_birth" && $value['value'] != "" ) {
-            $content .=  '<label for="name_of_birth">' . __('Name of birth', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="name_of_birth" id="name_of_birth"/><br/><br/>';
+            $content .=  '<label for="name_of_birth">' . __('Name of birth', 'formularia') . ' : </label><input class="formularia" type="text" name="name_of_birth" id="name_of_birth"/><br/><br/>';
         }
 
         if ( $key == "maiden_name" && $value['value'] != "" ) {
-            $content .=  '<label for="maiden_name">' . __('Maiden name', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="maiden_name" id="maiden_name"/><br/><br/>';
+            $content .=  '<label for="maiden_name">' . __('Maiden name', 'formularia') . ' : </label><input class="formularia" type="text" name="maiden_name" id="maiden_name"/><br/><br/>';
         }
 
         if ( $key == "mail" && $value['value'] != "" ) {
-            $content .=  '<label for="mail">' . __('Mail', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="mail" id="mail"/><br/><br/>';
+            $content .=  '<label for="mail">' . __('Mail', 'formularia') . ' : </label><input class="formularia" type="text" name="mail" id="mail"/><br/><br/>';
         }
 
         if ( $key == "confirmation_mail" && $value['value'] != "" ) {
-            $content .=  '<label for="confirmation_mail">' . __('Confirmation Mail', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="confirmation_mail" id="confirmation_mail"/><br/><br/>';
+            $content .=  '<label for="confirmation_mail">' . __('Confirmation Mail', 'formularia') . ' : </label><input class="formularia" type="text" name="confirmation_mail" id="confirmation_mail"/><br/><br/>';
         }
 
         if ( $key == "subject_mail" && $value['value'] != "" ) {
-            $content .=  '<label for="subject_mail">' . __('Subject Mail', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="subject_mail" id="subject_mail"/><br/><br/>';
+            $content .=  '<label for="subject_mail">' . __('Subject Mail', 'formularia') . ' : </label><input class="formularia" type="text" name="subject_mail" id="subject_mail"/><br/><br/>';
         }
 
         if ( $key == "text" && $value['value'] != "" ) {
-            $content .=  '<label for="text">' . __('Text', 'mm-plugin') . ' : </label><textarea class="mm-plugin" name="text" id="text"></textarea><br/><br/>';
+            $content .=  '<label for="text">' . __('Text', 'formularia') . ' : </label><textarea class="formularia" name="text" id="text"></textarea><br/><br/>';
         }
 
         if ( $key == "message" && $value['value'] != "" ) {
-            $content .=  '<label for="message">' . __('Message', 'mm-plugin') . ' : </label><textarea class="mm-plugin" name="message" id="message"></textarea><br/><br/>';
+            $content .=  '<label for="message">' . __('Message', 'formularia') . ' : </label><textarea class="formularia" name="message" id="message"></textarea><br/><br/>';
         }
 
         if ( $key == "comment" && $value['value'] != "" ) {
-            $content .=  '<label for="comment">' . __('Comment', 'mm-plugin') . ' : </label><textarea class="mm-plugin" name="comment" id="comment"></textarea><br/><br/>';
+            $content .=  '<label for="comment">' . __('Comment', 'formularia') . ' : </label><textarea class="formularia" name="comment" id="comment"></textarea><br/><br/>';
         }
 
         if ( $key == "mobile_phone_number" && $value['value'] != "" ) {
-            $content .=  '<label for="mobile_phone_number">' . __('Mobile phone number', 'mm-plugin') . ' : </label><input type="text" class="mm-plugin" name="mobile_phone_number" id="mobile_phone_number"/><br/><br/>';
+            $content .=  '<label for="mobile_phone_number">' . __('Mobile phone number', 'formularia') . ' : </label><input type="text" class="formularia" name="mobile_phone_number" id="mobile_phone_number"/><br/><br/>';
         }
 
         if ( $key == "house_phone_number" && $value['value'] != "" ) {
-            $content .=  '<label for="house_phone_number">' . __('House phone number', 'mm-plugin') . ' : </label><input type="text"  class="mm-plugin"  name="house_phone_number" id="house_phone_number"/><br/><br/>';
+            $content .=  '<label for="house_phone_number">' . __('House phone number', 'formularia') . ' : </label><input type="text"  class="formularia"  name="house_phone_number" id="house_phone_number"/><br/><br/>';
         }
 
         if ( $key == "office_phone_number" && $value['value'] != "" ) {
-            $content .=  '<label for="office_phone_number">' . __('Office phone number', 'mm-plugin') . ' : </label><input type="text"  class="mm-plugin"  name="office_phone_number" id="office_phone_number"/><br/><br/>';
+            $content .=  '<label for="office_phone_number">' . __('Office phone number', 'formularia') . ' : </label><input type="text"  class="formularia"  name="office_phone_number" id="office_phone_number"/><br/><br/>';
         }
 
         if ( $key == "fax" && $value['value'] != "" ) {
-            $content .=  '<label for="fax">' . __('Fax', 'mm-plugin') . ' : </label><input type="text"  class="mm-plugin"  name="fax" id="fax"/><br/><br/>';
+            $content .=  '<label for="fax">' . __('Fax', 'formularia') . ' : </label><input type="text"  class="formularia"  name="fax" id="fax"/><br/><br/>';
         }
 
         if ( $key == "adress" && $value['value'] != "" ) {
-            $content .=  '<label for="fax">' . __('Adress', 'mm-plugin') . ' : </label><input type="text"  class="mm-plugin"  name="adress" id="adress"/><br/><br/>';
+            $content .=  '<label for="fax">' . __('Adress', 'formularia') . ' : </label><input type="text"  class="formularia"  name="adress" id="adress"/><br/><br/>';
         }
 
         if ( $key == "zip_code" && $value['value'] != "" ) {
-            $content .=  '<label for="zip_code">' . __('Zip Code', 'mm-plugin') . ' : </label><input type="text" class="mm-plugin" name="zip_code" id="zip_code"/><br/><br/>';
+            $content .=  '<label for="zip_code">' . __('Zip Code', 'formularia') . ' : </label><input type="text" class="formularia" name="zip_code" id="zip_code"/><br/><br/>';
         }
 
         if ( $key == "city" && $value['value'] != "" ) {
-            $content .=  '<label for="city">' . __('City', 'mm-plugin') . ' : </label><input type="text" class="mm-plugin" name="city" id="city"/><br/><br/>';
+            $content .=  '<label for="city">' . __('City', 'formularia') . ' : </label><input type="text" class="formularia" name="city" id="city"/><br/><br/>';
         }
 
         if ( $key == "country" && $value['value'] != "" ) {
-            $content .=  '<label for="country">' . __('Country', 'mm-plugin') . ' : </label><input type="text" class="mm-plugin" name="country" id="country"/><br/><br/>';
+            $content .=  '<label for="country">' . __('Country', 'formularia') . ' : </label><input type="text" class="formularia" name="country" id="country"/><br/><br/>';
         }
 
         if ( $key == "name_street" && $value['value'] != "" ) {
-            $content .=  '<label for="name_street">' . __('Name street', 'mm-plugin') . ' : </label><input type="text" class="mm-plugin" name="name_street" id="name_street"/><br/><br/>';
+            $content .=  '<label for="name_street">' . __('Name street', 'formularia') . ' : </label><input type="text" class="formularia" name="name_street" id="name_street"/><br/><br/>';
         }
 
         if ( $key == "number_street" && $value['value'] != "" ) {
-            $content .=  '<label for="number_street">' . __('Number street', 'mm-plugin') . ' : </label><input type="text" class="mm-plugin" name="number_street" id="number_street"/><br/><br/>';
+            $content .=  '<label for="number_street">' . __('Number street', 'formularia') . ' : </label><input type="text" class="formularia" name="number_street" id="number_street"/><br/><br/>';
         }
 
         if ( $key == "longitude" && $value['value'] != "" ) {
-            $content .=  '<label for="longitude">' . __('Longitude', 'mm-plugin') . ' : </label><input type="text" class="mm-plugin" name="longitude" id="longitude"/><br/><br/>';
+            $content .=  '<label for="longitude">' . __('Longitude', 'formularia') . ' : </label><input type="text" class="formularia" name="longitude" id="longitude"/><br/><br/>';
         }
 
         if ( $key == "latitude" && $value['value'] != "" ) {
-            $content .=  '<label for="latitude">' . __('Latitude', 'mm-plugin') . ' : </label><input type="text" class="mm-plugin" name="latitude" id="latitude"/><br/><br/>';
+            $content .=  '<label for="latitude">' . __('Latitude', 'formularia') . ' : </label><input type="text" class="formularia" name="latitude" id="latitude"/><br/><br/>';
         }
 
         if ( $key == "cedex" && $value['value'] != "" ) {
-            $content .=  '<label for="cedex">' . __('Cedex', 'mm-plugin') . ' : </label><input type="text" class="mm-plugin" name="cedex" id="cedex"/><br/><br/>';
+            $content .=  '<label for="cedex">' . __('Cedex', 'formularia') . ' : </label><input type="text" class="formularia" name="cedex" id="cedex"/><br/><br/>';
         }
 
         if ( $key == "cedex" && $value['value'] != "" ) {
-            $content .=  '<label for="cedex">' . __('Cedex', 'mm-plugin') . ' : </label><input type="text" class="mm-plugin" name="cedex" id="cedex"/><br/><br/>';
+            $content .=  '<label for="cedex">' . __('Cedex', 'formularia') . ' : </label><input type="text" class="formularia" name="cedex" id="cedex"/><br/><br/>';
         }
 
         if ( $key == "btq" && $value['value'] != "" ) {
-            $content .=  '<label for="btq">' . __('Bis/Ter/Quater', 'mm-plugin') . ' : </label>
-                            <select class="mm-plugin" id="btq" name="btq">
+            $content .=  '<label for="btq">' . __('Bis/Ter/Quater', 'formularia') . ' : </label>
+                            <select class="formularia" id="btq" name="btq">
                               <option value="bis">Bis</option>
                               <option value="ter">Ter</option>
                               <option value="quater">Quater</option>
@@ -604,8 +604,8 @@ function formularia_show_form( $content ){
         }
 
         if ( $key == "type_street" && $value['value'] != "" ) {
-            $content .=  '<label for="type_street">' . __('Type street (French)', 'mm-plugin') . ' : </label>
-            <select class="mm-plugin" id="btq" name="type_street">
+            $content .=  '<label for="type_street">' . __('Type street (French)', 'formularia') . ' : </label>
+            <select class="formularia" id="btq" name="type_street">
 
 	          		<option value="ALL">Allée</option>
 
@@ -713,12 +713,12 @@ function formularia_show_form( $content ){
         }
 
         if ( $key == "province" && $value['value'] != "" ) {
-            $content .=  '<label for="province">' . __('Province', 'mm-plugin') . ' : </label><input type="text" class="mm-plugin" name="province" id="province"/><br/><br/>';
+            $content .=  '<label for="province">' . __('Province', 'formularia') . ' : </label><input type="text" class="formularia" name="province" id="province"/><br/><br/>';
         }
 
         if ( $key == "department" && $value['value'] != "" ) {
-            $content .=  '<label for="department">' . __('Department (French)', 'mm-plugin') . ' : </label>
-                            <select id="department" class="mm-plugin" name="department">
+            $content .=  '<label for="department">' . __('Department (French)', 'formularia') . ' : </label>
+                            <select id="department" class="formularia" name="department">
 
                                 <option value="01">01 - Ain</option>
 
@@ -924,8 +924,8 @@ function formularia_show_form( $content ){
         }
 
         if ( $key == "region" && $value['value'] != "" ) {
-            $content .=  '<label for="region">' . __('Region(French)', 'mm-plugin') . ' : </label>
-                            <select id="region" class="mm-plugin" name="department">
+            $content .=  '<label for="region">' . __('Region(French)', 'formularia') . ' : </label>
+                            <select id="region" class="formularia" name="department">
                                 <script language="javascript">
                                     var states = new Array("Alsace", "Aquitaine", "Auvergne", "Basse-Normandie", "Bourgogne", "Bretagne", "Centre", "Champagne-Ardenne", "Corse", "Franche-Comte", "Haute-Normandie", "Ile-de-France", "Languedoc-Roussillon", "Limousin", "Lorraine", "Midi-Pyrenees", "Nord-Pas-de-Calais", "country de la Loire", "Picardie", "Poitou-Charentes", "Provence-Alpes-Cote d\'Azur", "Rhone-Alpes");
                                     for(var hi=0; hi<states.length; hi++)
@@ -935,144 +935,144 @@ function formularia_show_form( $content ){
         }
 
         if ( $key == "host_identifier" && $value['value'] != "" ) {
-            $content .=  '<label for="host_identifier">' . __('Host_identifier', 'mm-plugin') . ' : </label><input type="text" class="mm-plugin" name="host_identifier" id="host_identifier"/><br/><br/>';
+            $content .=  '<label for="host_identifier">' . __('Host_identifier', 'formularia') . ' : </label><input type="text" class="formularia" name="host_identifier" id="host_identifier"/><br/><br/>';
         }
 
         if ( $key == "pseudo" && $value['value'] != "" ) {
-            $content .=  '<label for="pseudo">' . __('Pseudo', 'mm-plugin') . ' : </label><input type="text" class="mm-plugin" name="pseudo" id="pseudo"/><br/><br/>';
+            $content .=  '<label for="pseudo">' . __('Pseudo', 'formularia') . ' : </label><input type="text" class="formularia" name="pseudo" id="pseudo"/><br/><br/>';
         }
 
         if ( $key == "password" && $value['value'] != "" ) {
-            $content .=  '<label for="password">' . __('Password', 'mm-plugin') . ' : </label><input type="password" class="mm-plugin" name="password" id="password"/><br/><br/>';
+            $content .=  '<label for="password">' . __('Password', 'formularia') . ' : </label><input type="password" class="formularia" name="password" id="password"/><br/><br/>';
         }
 
         if ( $key == "confirmation_password" && $value['value'] != "" ) {
-            $content .=  '<label for="confirmation_password">' . __('Confirmation_password', 'mm-plugin') . ' : </label><input type="password" class="mm-plugin" name="confirmation_password" id="confirmation_password"/><br/><br/>';
+            $content .=  '<label for="confirmation_password">' . __('Confirmation_password', 'formularia') . ' : </label><input type="password" class="formularia" name="confirmation_password" id="confirmation_password"/><br/><br/>';
         }
 
         if ( $key == "number_bank_card" && $value['value'] != "" ) {
-            $content .=  '<label for="number_bank_card">' . __('Number Bank Card', 'mm-plugin') . ' : </label><input class="mm-plugin" type="number" name="number_bank_card" id="number_bank_card" pattern="[0-9]{13,16}"/><br/><br/>';
+            $content .=  '<label for="number_bank_card">' . __('Number Bank Card', 'formularia') . ' : </label><input class="formularia" type="number" name="number_bank_card" id="number_bank_card" pattern="[0-9]{13,16}"/><br/><br/>';
         }
 
         if ( $key == "date_expiration_bank_card" && $value['value'] != "" ) {
-            $content .=  '<label for="number_bank_card">' . __('Date expiration bank card', 'mm-plugin') . ' : </label><input class="mm-plugin" type="month" name="date_expiration_bank_card" id="date_expiration_bank_card"/><br/><br/>';
+            $content .=  '<label for="number_bank_card">' . __('Date expiration bank card', 'formularia') . ' : </label><input class="formularia" type="month" name="date_expiration_bank_card" id="date_expiration_bank_card"/><br/><br/>';
         }
 
         if ( $key == "security_password_bank_card" && $value['value'] != "" ) {
-            $content .=  '<label for="security_password_bank_card">' . __('Security password bank card', 'mm-plugin') . ' : </label><input class="mm-plugin" type="number" name="security_password_bank_card" id="security_password_bank_card"/><br/><br/>';
+            $content .=  '<label for="security_password_bank_card">' . __('Security password bank card', 'formularia') . ' : </label><input class="formularia" type="number" name="security_password_bank_card" id="security_password_bank_card"/><br/><br/>';
         }
 
         if ( $key == "occupation" && $value['value'] != "" ) {
-            $content .=  '<label for="occupation">' . __('Occupation', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="occupation" id="occupation"/><br/><br/>';
+            $content .=  '<label for="occupation">' . __('Occupation', 'formularia') . ' : </label><input class="formularia" type="text" name="occupation" id="occupation"/><br/><br/>';
         }
 
         if ( $key == "social_insurance_number" && $value['value'] != "" ) {
-            $content .=  '<label for="social_insurance_number">' . __('Sociale insurance number', 'mm-plugin') . ' : </label><input class="mm-plugin" type="number" name="social_insurance_number" id="social_insurance_number"/><br/><br/>';
+            $content .=  '<label for="social_insurance_number">' . __('Sociale insurance number', 'formularia') . ' : </label><input class="formularia" type="number" name="social_insurance_number" id="social_insurance_number"/><br/><br/>';
 
         }
 
         if ( $key == "website" && $value['value'] != "" ) {
-            $content .=  '<label for="website">' . __('Website', 'mm-plugin') . ' : </label><input class="mm-plugin" type="url" name="website" id="website"/><br/><br/>';
+            $content .=  '<label for="website">' . __('Website', 'formularia') . ' : </label><input class="formularia" type="url" name="website" id="website"/><br/><br/>';
         }
 
         if ( $key == "facebook_account" && $value['value'] != "" ) {
-            $content .=  '<label for="facebook_account">' . __('Facebook account', 'mm-plugin') . ' : </label><input class="mm-plugin" pattern="^[a-z\d\.]{5,}$" type="url" name="facebook_account" id="facebook_account"/><br/><br/>';
+            $content .=  '<label for="facebook_account">' . __('Facebook account', 'formularia') . ' : </label><input class="formularia" pattern="^[a-z\d\.]{5,}$" type="url" name="facebook_account" id="facebook_account"/><br/><br/>';
         }
 
         if ( $key == "twitter_account" && $value['value'] != "" ) {
-            $content .=  '<label for="twitter_account">' . __('Twitter account', 'mm-plugin') . ' : </label><input class="mm-plugin" pattern="^[A-Za-z0-9_]{1,15}$" type="url" name="twitter_account" id="twitter_account"/><br/><br/>';
+            $content .=  '<label for="twitter_account">' . __('Twitter account', 'formularia') . ' : </label><input class="formularia" pattern="^[A-Za-z0-9_]{1,15}$" type="url" name="twitter_account" id="twitter_account"/><br/><br/>';
         }
 
         if ( $key == "linkedin_account" && $value['value'] != "" ) {
-            $content .=  '<label for="linkedin_account">' . __('LinkedIn account', 'mm-plugin') . ' : </label><input class="mm-plugin" type="url" name="linkedin_account" id="linkedin_account"/><br/><br/>';
+            $content .=  '<label for="linkedin_account">' . __('LinkedIn account', 'formularia') . ' : </label><input class="formularia" type="url" name="linkedin_account" id="linkedin_account"/><br/><br/>';
         }
 
         if ( $key == "pinterest_account" && $value['value'] != "" ) {
-            $content .=  '<label for="pinterest_account">' . __('Pinterest account', 'mm-plugin') . ' : </label><input class="mm-plugin" type="url" name="pinterest_account" id="pinterest_account"/><br/><br/>';
+            $content .=  '<label for="pinterest_account">' . __('Pinterest account', 'formularia') . ' : </label><input class="formularia" type="url" name="pinterest_account" id="pinterest_account"/><br/><br/>';
         }
 
         if ( $key == "google_plus_account" && $value['value'] != "" ) {
-            $content .=  '<label for="google_plus_account">' . __('Google Plus account', 'mm-plugin') . ' : </label><input class="mm-plugin" type="url" name="google_plus_account" id="google_plus_account"/><br/><br/>';
+            $content .=  '<label for="google_plus_account">' . __('Google Plus account', 'formularia') . ' : </label><input class="formularia" type="url" name="google_plus_account" id="google_plus_account"/><br/><br/>';
         }
 
         if ( $key == "instagram_account" && $value['value'] != "" ) {
-            $content .=  '<label for="instagram_account">' . __('Instagram account', 'mm-plugin') . ' : </label><input class="mm-plugin" type="url" name="instagram_account" id="instagram_account"/><br/><br/>';
+            $content .=  '<label for="instagram_account">' . __('Instagram account', 'formularia') . ' : </label><input class="formularia" type="url" name="instagram_account" id="instagram_account"/><br/><br/>';
         }
 
         if ( $key == "viadeo_account" && $value['value'] != "" ) {
-            $content .=  '<label for="viadeo_account">' . __('Viadeo account', 'mm-plugin') . ' : </label><input class="mm-plugin" type="url" name="viadeo_account" id="viadeo_account"/><br/><br/>';
+            $content .=  '<label for="viadeo_account">' . __('Viadeo account', 'formularia') . ' : </label><input class="formularia" type="url" name="viadeo_account" id="viadeo_account"/><br/><br/>';
         }
 
         if ( $key == "file_number" && $value['value'] != "" ) {
-            $content .=  '<label for="file_number">' . __('File number', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="file_number" id="file_number"/><br/><br/>';
+            $content .=  '<label for="file_number">' . __('File number', 'formularia') . ' : </label><input class="formularia" type="text" name="file_number" id="file_number"/><br/><br/>';
         }
 
         if ( $key == "order_number" && $value['value'] != "" ) {
-            $content .=  '<label for="order_number">' . __('Order number', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="order_number" id="order_number"/><br/><br/>';
+            $content .=  '<label for="order_number">' . __('Order number', 'formularia') . ' : </label><input class="formularia" type="text" name="order_number" id="order_number"/><br/><br/>';
         }
 
         if ( $key == "company" && $value['value'] != "" ) {
-            $content .=  '<label for="company">' . __('Company', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="company" id="company"/><br/><br/>';
+            $content .=  '<label for="company">' . __('Company', 'formularia') . ' : </label><input class="formularia" type="text" name="company" id="company"/><br/><br/>';
         }
 
         if ( $key == "name_company" && $value['value'] != "" ) {
-            $content .=  '<label for="name_company">' . __('Name of the company', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="name_company" id="name_company"/><br/><br/>';
+            $content .=  '<label for="name_company">' . __('Name of the company', 'formularia') . ' : </label><input class="formularia" type="text" name="name_company" id="name_company"/><br/><br/>';
         }
 
         if ( $key == "siret_number" && $value['value'] != "" ) {
-            $content .=  '<label for="siret_number">' . __('SIRET number', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="siret_number" id="siret_number"/><br/><br/>';
+            $content .=  '<label for="siret_number">' . __('SIRET number', 'formularia') . ' : </label><input class="formularia" type="text" name="siret_number" id="siret_number"/><br/><br/>';
         }
 
         if ( $key == "iban_number" && $value['value'] != "" ) {
-            $content .=  '<label for="iban_number">' . __('IBAN number', 'mm-plugin') . ' : </label><input class="mm-plugin" type="text" name="iban_number" id="iban_number"/><br/><br/>';
+            $content .=  '<label for="iban_number">' . __('IBAN number', 'formularia') . ' : </label><input class="formularia" type="text" name="iban_number" id="iban_number"/><br/><br/>';
         }
 
         if ( $key == "date" && $value['value'] != "" ) {
-            $content .=  '<label for="date">' . __('Date', 'mm-plugin') . ' : </label><input class="mm-plugin" type="date" name="date" id="date"/><br/><br/>';
+            $content .=  '<label for="date">' . __('Date', 'formularia') . ' : </label><input class="formularia" type="date" name="date" id="date"/><br/><br/>';
         }
 
         if ( $key == "beginning_date" && $value['value'] != "" ) {
-            $content .=  '<label for="beginning_date">' . __('Date of beginning', 'mm-plugin') . ' : </label><input class="mm-plugin" type="date" name="beginning_date" id="beginning_date"/><br/><br/>';
+            $content .=  '<label for="beginning_date">' . __('Date of beginning', 'formularia') . ' : </label><input class="formularia" type="date" name="beginning_date" id="beginning_date"/><br/><br/>';
         }
 
         if ( $key == "end_date" && $value['value'] != "" ) {
-            $content .=  '<label for="end_date">' . __('Date of end', 'mm-plugin') . ' : </label><input class="mm-plugin" type="date" name="end_date" id="end_date"/><br/><br/>';
+            $content .=  '<label for="end_date">' . __('Date of end', 'formularia') . ' : </label><input class="formularia" type="date" name="end_date" id="end_date"/><br/><br/>';
         }
 
         if ( $key == "label_new_text_1" && $value['value'] != "" ) {
-            $content .= '<label for="label_new_text_1">'.$value['value'].' : </label><input type="text" class="mm-plugin" name="label_new_text_1" id="label_new_text_1"/><br/><br/>';
+            $content .= '<label for="label_new_text_1">'.$value['value'].' : </label><input type="text" class="formularia" name="label_new_text_1" id="label_new_text_1"/><br/><br/>';
         }
 
         if ( $key == "label_new_textarea_1" && $value['value'] != "" ) {
-            $content .= '<label for="label_new_textarea_1">'.$value['value'].' : </label><textarea class="mm-plugin" name="label_new_textarea_1" id="label_new_textarea_1"></textarea><br/><br/>';
+            $content .= '<label for="label_new_textarea_1">'.$value['value'].' : </label><textarea class="formularia" name="label_new_textarea_1" id="label_new_textarea_1"></textarea><br/><br/>';
         }
 
         if ( $key == "label_new_color_selector_1" && $value['value'] != "" ) {
-            $content .= '<label for="label_new_color_selector_1">'.$value['value'].' : </label><input type="color" class="mm-plugin" name="label_new_color_selector_1" id="label_new_color_selector_1"/><br/><br/>';
+            $content .= '<label for="label_new_color_selector_1">'.$value['value'].' : </label><input type="color" class="formularia" name="label_new_color_selector_1" id="label_new_color_selector_1"/><br/><br/>';
         }
 
         if ( $key == "label_new_input_number_1" && $value['value'] != "" ) {
-            $content .= '<label for="label_new_input_number_1">'.$value['value'].' : </label><input type="number" class="mm-plugin" name="label_new_input_number_1" id="label_new_input_number_1"/><br/><br/>';
+            $content .= '<label for="label_new_input_number_1">'.$value['value'].' : </label><input type="number" class="formularia" name="label_new_input_number_1" id="label_new_input_number_1"/><br/><br/>';
         }
 
         if ( $key == "label_new_input_number_1" && $value['value'] != "" ) {
-            $content .= '<label for="label_new_input_number_1">'.$value['value'].' : </label><input type="number" class="mm-plugin" name="label_new_input_number_1" id="label_new_input_number_1"/><br/><br/>';
+            $content .= '<label for="label_new_input_number_1">'.$value['value'].' : </label><input type="number" class="formularia" name="label_new_input_number_1" id="label_new_input_number_1"/><br/><br/>';
         }
 
         if ( $key == "label_new_button_1" && $value['value'] != "" ) {
-            $content .= '<label for="label_new_button_1">'.$value['value'].' : </label><input type="button" class="mm-plugin" name="label_new_button_1" id="label_new_button_1"/><br/><br/>';
+            $content .= '<label for="label_new_button_1">'.$value['value'].' : </label><input type="button" class="formularia" name="label_new_button_1" id="label_new_button_1"/><br/><br/>';
         }
 
         if ( $key == "label_new_file_1" && $value['value'] != "" ) {
-            $content .= '<label for="label_new_file_1">'.$value['value'].' : </label><input type="file" class="mm-plugin" name="label_new_file_1" id="label_new_file_1"/><br/><br/>';
+            $content .= '<label for="label_new_file_1">'.$value['value'].' : </label><input type="file" class="formularia" name="label_new_file_1" id="label_new_file_1"/><br/><br/>';
         }
 
         if ( $key == "label_new_password_1" && $value['value'] != "" ) {
-            $content .= '<label for="label_new_password_1">'.$value['value'].' : </label><input type="password" class="mm-plugin" name="label_new_password_1" id="label_new_password_1"/><br/><br/>';
+            $content .= '<label for="label_new_password_1">'.$value['value'].' : </label><input type="password" class="formularia" name="label_new_password_1" id="label_new_password_1"/><br/><br/>';
         }
 
         if ( $key == "label_new_date_1" && $value['value'] != "" ) {
-            $content .= '<label for="label_new_date_1">'.$value['value'].' : </label><input type="date" class="mm-plugin" name="label_new_date_1" id="label_new_date_1"/><br/><br/>';
+            $content .= '<label for="label_new_date_1">'.$value['value'].' : </label><input type="date" class="formularia" name="label_new_date_1" id="label_new_date_1"/><br/><br/>';
         }
 
     }
