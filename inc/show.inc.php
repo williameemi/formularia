@@ -548,7 +548,7 @@ function formularia_show_form( $content ){
         }
 
         if ( $key == "subject_mail" && $value['value'] != "" ) {
-            $content .=  '<label for="subject_mail">' . __('Subject Mail', 'formularia') . ' : </label><input class="formularia" type="text" name="subject_mail" id="subject_mail"/><br/><br/>';
+            $content .=  '<label for="subject_mail">' . __('Subject of the Mail', 'formularia') . ' : </label><input class="formularia" type="text" name="subject_mail" id="subject_mail"/><br/><br/>';
         }
 
         if ( $key == "text" && $value['value'] != "" ) {
